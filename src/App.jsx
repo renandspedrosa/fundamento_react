@@ -6,6 +6,10 @@ import Fragmento from './componentes/basicos/Fragmento.jsx'
 import Aleatorio from './componentes/basicos/Aleatorio.jsx'
 import Card from './componentes/layout/Card.jsx'
 import Familia from './componentes/basicos/Familia.jsx'
+import FamiliaMembro from './componentes/basicos/FamiliaMembro.jsx'
+import ListaAlunos from './componentes/repeticao/ListaAlunos.jsx'
+import TabelaProdutos from './componentes/repeticao/TabelaProdutos.jsx'
+import TabelaProdutosRes from './componentes/repeticao/TabelaProdutosRes.jsx'
 //com default pode retornar uma funcao anonima
 // function pode virar => (arrow function)
 //por tem um unico parametro pode se tirar os parenteses
@@ -15,8 +19,22 @@ export default _ =>
         <div id="app">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+                <Card titulo="Produtos Resposta" color="#3a9ad9">
+                    <TabelaProdutosRes/>
+                </Card>
+                <Card titulo="Produtos" color="#ff4c">
+                    <TabelaProdutos/>
+                </Card>
+                <Card titulo="Repetição" color="#ff4c65">
+                    <ListaAlunos/>
+                </Card>
                 <Card titulo="Componentes com Filhos" color="#00c8f8">
-                  <Familia sobrenome="Pedrosa"></Familia>
+                  <Familia sobrenome="Pedrosa">
+                        {/* na primeira maneira dentro do familia fica vazio */}
+                        <FamiliaMembro nome="Renan " />
+                        <FamiliaMembro nome="Rodrigo " />
+                        <FamiliaMembro nome="Susi " />
+                  </Familia>
                 </Card>
                 <Card titulo="Desafio aleatório" color="#FA6900">
                     <Aleatorio min={1} max={60}/>
