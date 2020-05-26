@@ -10,6 +10,7 @@ import FamiliaMembro from './componentes/basicos/FamiliaMembro.jsx'
 import ListaAlunos from './componentes/repeticao/ListaAlunos.jsx'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos.jsx'
 import TabelaProdutosRes from './componentes/repeticao/TabelaProdutosRes.jsx'
+import ParOuImpar from './componentes/condicional/ParOuImpar'
 //com default pode retornar uma funcao anonima
 // function pode virar => (arrow function)
 //por tem um unico parametro pode se tirar os parenteses
@@ -19,6 +20,9 @@ export default _ =>
         <div id="app">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+                <Card titulo="Condicional" color="#982395">
+                    <ParOuImpar numero={20} />
+                </Card>
                 <Card titulo="Produtos Resposta" color="#3a9ad9">
                     <TabelaProdutosRes/>
                 </Card>
