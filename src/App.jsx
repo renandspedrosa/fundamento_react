@@ -11,6 +11,7 @@ import ListaAlunos from './componentes/repeticao/ListaAlunos.jsx'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos.jsx'
 import TabelaProdutosRes from './componentes/repeticao/TabelaProdutosRes.jsx'
 import ParOuImpar from './componentes/condicional/ParOuImpar'
+import UsuarioInfo from './componentes/condicional/UsuarioInfo'
 //com default pode retornar uma funcao anonima
 // function pode virar => (arrow function)
 //por tem um unico parametro pode se tirar os parenteses
@@ -20,7 +21,10 @@ export default _ =>
         <div id="app">
             <h1>Fundamentos React</h1>
             <div className="Cards">
-                <Card titulo="Condicional" color="#982395">
+            <Card titulo="Condicional" color="#982395">
+                    {/* < UsuarioInfo usuario={{ email: 'renan@pedrosa.com'}}/>
+                    < UsuarioInfo usuario={{}}/> */}
+                    < UsuarioInfo usuario={{ nome: 'renan'}}/>
                     <ParOuImpar numero={20} />
                 </Card>
                 <Card titulo="Produtos Resposta" color="#3a9ad9">
