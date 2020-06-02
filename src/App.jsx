@@ -15,6 +15,8 @@ import UsuarioInfo from './componentes/condicional/UsuarioInfo'
 import DiretaPai from  "./componentes/comunicacao/DiretaPai"
 import IndiretaPai from "./componentes/comunicacao/IndiretaPai.jsx"
 import Input from "./componentes/formulario/input.jsx"
+import Contador from "./componentes/contador/Contador.jsx"
+
 //com default pode retornar uma funcao anonima
 // function pode virar => (arrow function)
 //por tem um unico parametro pode se tirar os parenteses
@@ -24,6 +26,9 @@ export default _ =>
         <div id="app">
             <h1>Fundamentos React</h1>
             <div className="Cards">
+                <Card titulo="Componente Contador" color="#424242">
+                    <Contador numeroInicial={10}></Contador>
+                </Card>
                 <Card titulo="Componente Controlado" color="#e45f56">
                     <Input/>
                 </Card>
