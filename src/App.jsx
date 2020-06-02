@@ -14,6 +14,7 @@ import ParOuImpar from './componentes/condicional/ParOuImpar'
 import UsuarioInfo from './componentes/condicional/UsuarioInfo'
 import DiretaPai from  "./componentes/comunicacao/DiretaPai"
 import IndiretaPai from "./componentes/comunicacao/IndiretaPai.jsx"
+import Input from "./componentes/formulario/input.jsx"
 //com default pode retornar uma funcao anonima
 // function pode virar => (arrow function)
 //por tem um unico parametro pode se tirar os parenteses
@@ -23,7 +24,10 @@ export default _ =>
         <div id="app">
             <h1>Fundamentos React</h1>
             <div className="Cards">
-            <Card titulo="Comunicação Indireta" color="#8bad39">
+                <Card titulo="Componente Controlado" color="#e45f56">
+                    <Input/>
+                </Card>
+                <Card titulo="Comunicação Indireta" color="#8bad39">
                     <IndiretaPai/>
                 </Card>
                 <Card titulo="Comunicação Direta" color="#59323c">
